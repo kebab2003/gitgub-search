@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+#autocomplete-list {
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+    display: none;
+}
+
+#autocomplete-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#autocomplete-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#repo-list li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#repo-list li .repo-name {
+    font-weight: bold;
+}
+
+#repo-list li .repo-details {
+    color: gray;
+    font-size: 14px;
+}
+
+#repo-list li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
